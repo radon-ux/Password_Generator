@@ -20,7 +20,7 @@ window = Tk()
 window.geometry("720x480")
 window.title("Générateur de mot de passe")
 window.config(background="#4068A4")
-window.iconbitmap(os.path.join("images","icon.ico"))
+window.iconbitmap(os.path.join("icon.ico"))
 
 principale_frame = Frame(window,bg="#4068A4",borderwidth=1)  # Frame principale
 principale_frame.pack(expand=YES)
@@ -35,7 +35,7 @@ right_frame.grid(row=0,column=1)
 
 height = 300
 width = 300
-image = PhotoImage(file= os.path.join("images","password-code.png")).zoom(30).subsample(55)
+image = PhotoImage(file= os.path.join("password-code.png")).zoom(30).subsample(55)
 canvas = Canvas(left_frame,width=width,height=height,bg="#4068A4",bd=0,highlightthickness=0)
 canvas.create_image(width/2,height/2,image=image)
 canvas.pack()
